@@ -8,7 +8,9 @@ const Header = () => {
     <S.Cabecalho>
       <div>
         <S.Titulo>Meus contatos</S.Titulo>
-        <IoAddOutline size="26" />
+        <S.NovoContato to="/novoContato">
+          <IoAddOutline size="26" cursor="pointer"/>
+        </S.NovoContato>
       </div>
       <S.ContainerInput>
         <SlMagnifier size="18" />

@@ -10,7 +10,7 @@ const initialState: contatoState = {
     {
       nome: "Breno Pereira",
       telefone: "(32) 94376-8661",
-      email: "fulanopereirabetti@gmail.com",
+      email: "fulano@gmail.com",
     },
     {
       nome: "Arthur Seta",
@@ -36,9 +36,20 @@ const contatosSlice = createSlice({
         ),
       ];
     },
+    adicionar: (state, action: PayloadAction<Contato>) => {
+      const contaJaExiste = state.contatos.find(
+        (contato) => contato.telefone === action.payload.telefone
+      );
+
+      if (contaJaExiste) {
+        alert('Já existe um nome com esse número')
+      } else {        
+        state.contatos.push(action.payload)
+      }
+    },
   },
 });
 
-export const { excluir } = contatosSlice.actions
+export const { excluir } = contatosSlice.actions;
 
 export default contatosSlice.reducer;

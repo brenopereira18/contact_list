@@ -12,7 +12,7 @@ type Props = {
 };
 
 const Contato = ({ nome, telefone, email }: Props) => {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   return (
     <S.Contact>
@@ -24,7 +24,11 @@ const Contato = ({ nome, telefone, email }: Props) => {
       </S.Dados>
       <S.Icones>
         <ImPencil color={variaveis.cinza} cursor="pointer" />
-        <ImBin onClick={() => dispatch(excluir(telefone))} color={variaveis.cinza} cursor="pointer" />
+        <ImBin          
+          onClick={() => dispatch(excluir(telefone))}
+          color={variaveis.cinza}
+          cursor="pointer"
+        />
       </S.Icones>
     </S.Contact>
   );

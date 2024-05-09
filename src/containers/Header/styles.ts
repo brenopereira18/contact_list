@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import { Link } from "react-router-dom";
 import variaveis from "../../styles/variaveis";
 
 export const Cabecalho = styled.div`
@@ -12,7 +13,9 @@ export const Cabecalho = styled.div`
   }
 `;
 
-
+export const NovoContato = styled(Link)`
+  color: ${variaveis.cinza};
+`
 
 export const Titulo = styled.h1`
   font-size: 20px;
