@@ -42,14 +42,14 @@ const contatosSlice = createSlice({
       );
 
       if (contaJaExiste) {
-        alert('Já existe um nome com esse número')
-      } else {        
-        state.contatos.push(action.payload)
+        alert("Já existe um nome com esse número");
+      } else {
+        state.contatos.push(action.payload);
       }
     },
   },
 });
 
-export const { excluir } = contatosSlice.actions;
+export const { excluir, adicionar } = contatosSlice.actions;
 
 export default contatosSlice.reducer;
