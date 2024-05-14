@@ -5,7 +5,7 @@ export const Contact = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 0;
+  padding: 14px 0;
   color: ${variaveis.cinza};
 `;
 
@@ -19,18 +19,24 @@ export const Dados = styled.div`
   padding-right: 80px;
   padding-left: 12px;
 
-  h4 {
-    font-size: 16px;
-  }
-
-  p {
+  textarea {
     font-size: 12px;
-    color: ${variaveis.cinzaEscuro};
-    padding-top: 4px;
+    color: ${variaveis.cinzaEscuro};    
+    resize: none;
+    border: none;
+    height: 14px;
+    background-color: transparent;
+
+    &:first-child {
+      font-size: 16px;
+      color: ${variaveis.cinza};
+      height: 20px;
+    }
   }
 `;
 
 export const Icones = styled.div`
   display: flex;
+  align-items: center;
   gap: 16px;
 `;

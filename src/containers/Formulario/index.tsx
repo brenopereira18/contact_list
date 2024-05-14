@@ -4,6 +4,7 @@ import { IMaskInput } from "react-imask";
 import { useNavigate } from "react-router-dom";
 import { FormEvent, useState } from "react";
 import { adicionar } from "../../store/reducers/contato";
+import { v4 as uuid } from "uuid";
 
 const Formulario = () => {
   const dispatch = useDispatch();
@@ -19,6 +20,7 @@ const Formulario = () => {
       nome,
       telefone,
       email,
+      id: uuid(),            
     }))
 
     navigate('/')
