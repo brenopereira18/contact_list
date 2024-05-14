@@ -5,11 +5,28 @@ import { Main } from "./styles";
 
 const ListaDeContatos = () => {
   const { contatos } = useSelector((state: RootReducer) => state.contatos);
+  const { termo } = useSelector((state: RootReducer) => state.filtro);
+
+  const filtraTermo = () => {
+    let contatosFiltrados = contatos;
+
+    if (termo !== undefined) {
+      contatosFiltrados = contatosFiltrados.filter((contato) =>
+        contato.nome.toLowerCase().search(termo.toLowerCase()) >= 0
+      );
+
+      return contatosFiltrados
+    } else {
+      return contatos
+    }
+  };
+
+  const filtraContatos = filtraTermo()
 
   return (
     <Main>
       <ul>
-        {contatos.map((contato) => (
+        {filtraContatos.map((contato) => (
           <li key={contato.telefone}>
             <Contato
               nome={contato.nome}
