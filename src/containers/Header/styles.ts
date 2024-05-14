@@ -5,7 +5,7 @@ import variaveis from "../../styles/variaveis";
 export const Cabecalho = styled.div`
   background-color: ${variaveis.roxoEscuro};
   color: ${variaveis.cinza};
-  height: 25vh;
+  height: 165px;
   padding: 40px;
 
   div {

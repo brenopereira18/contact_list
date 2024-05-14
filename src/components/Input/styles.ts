@@ -7,6 +7,7 @@ export const CampoPesquisa = styled.input`
     background-color: transparent;
     border: none;
     outline: none;
+    font-size: 16px;
 
     &::placeholder {
         color: ${variaveis.cinza}; 

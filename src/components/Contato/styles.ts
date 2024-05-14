@@ -15,7 +15,7 @@ export const Contact = styled.div`
 `;
 
 export const Img = styled.img`
-  width: 50px;  
+  width: 60px;  
   border-radius: 30%;
 `;
 
@@ -25,17 +25,17 @@ export const Dados = styled.div`
   padding-left: 12px;
 
   textarea {
-    font-size: 12px;
+    font-size: 16px;
     color: ${variaveis.cinzaEscuro};    
     resize: none;
     border: none;
-    height: 14px;
+    height: 20px;
     background-color: transparent;
 
     &:first-child {
-      font-size: 16px;
+      font-size: 18px;
       color: ${variaveis.cinza};
-      height: 20px;
+      height: 22px;
     }
   }
 
