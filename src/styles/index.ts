@@ -13,7 +13,7 @@ const EstiloGlobal = createGlobalStyle`
 `;
 
 export const Container = styled.div`
-  max-width: 400px;
+  max-width: 480px;
   width: 100%;
   margin: 0 auto;
 
