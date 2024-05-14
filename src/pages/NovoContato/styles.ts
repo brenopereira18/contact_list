@@ -6,6 +6,10 @@ export const Container = styled.div`
   padding-top: 12%;
   background-color: ${variaveis.roxoClaro};
   height: 100vh;
+
+  @media(width >= 1024px) {
+   padding-top: 4%; 
+  }
 `;
 
 export const Button = styled(Link)`

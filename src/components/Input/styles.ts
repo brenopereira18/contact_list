@@ -11,4 +11,8 @@ export const CampoPesquisa = styled.input`
     &::placeholder {
         color: ${variaveis.cinza}; 
     }
+
+    @media(width >= 1024px) {
+        width: 460px;        
+    }
 `

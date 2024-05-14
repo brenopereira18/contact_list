@@ -6,12 +6,17 @@ export const Contact = styled.div`
   justify-content: center;
   align-items: center;
   padding: 14px 0;
-  color: ${variaveis.cinza};
+  color: ${variaveis.cinza}; 
+  
+  @media(width >= 1024px) {
+    width: 480px;
+    margin: 0 auto;
+  }
 `;
 
 export const Img = styled.img`
-  width: 48px;
-  border-radius: 50%;
+  width: 50px;  
+  border-radius: 30%;
 `;
 
 export const Dados = styled.div`
@@ -32,6 +37,10 @@ export const Dados = styled.div`
       color: ${variaveis.cinza};
       height: 20px;
     }
+  }
+
+  @media(width >= 1024px) {
+   width: 360px; 
   }
 `;
 

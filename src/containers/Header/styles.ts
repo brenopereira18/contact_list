@@ -11,6 +11,14 @@ export const Cabecalho = styled.div`
   div {
     display: flex;  
   }
+
+  @media(width >= 1024px) {
+    div {
+      &:first-child {
+        justify-content: space-around;
+      }
+    }  
+  }
 `;
 
 export const NovoContato = styled(Link)`
@@ -30,4 +38,10 @@ export const ContainerInput = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media(width >= 1024px) {    
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 24px;    
+  }
 `;

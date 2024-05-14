@@ -1,4 +1,4 @@
-import foto from "../../assets/perfil.jpg";
+import foto from "../../assets/perfil.png";
 import variaveis from "../../styles/variaveis";
 import * as S from "./styles";
 import { excluir } from "../../store/reducers/contato";

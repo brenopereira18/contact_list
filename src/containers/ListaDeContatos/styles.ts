@@ -14,4 +14,5 @@ export const Main = styled.main`
     background-color: ${variaveis.cinzaEscuro};
     border-radius: 4px;
   }
+  
 `;
