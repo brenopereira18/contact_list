@@ -11,6 +11,7 @@ export const Contact = styled.div`
   @media(width >= 1024px) {
     width: 480px;
     margin: 0 auto;
+    margin-top: 20px;    
   }
 `;
 

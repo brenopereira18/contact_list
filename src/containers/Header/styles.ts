@@ -13,9 +13,12 @@ export const Cabecalho = styled.div`
   }
 
   @media(width >= 1024px) {
+
     div {
       &:first-child {
-        justify-content: space-around;
+        justify-content: space-between;
+        width: 510px;
+        margin: 0 auto;
       }
     }  
   }

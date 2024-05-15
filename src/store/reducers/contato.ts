@@ -23,7 +23,19 @@ const initialState: contatoState = {
     {
       nome: "Pedro Oliveira",
       telefone: "(32) 99846-8642",
+      email: "beltrano@gmail.com",
+      id: uuid(),
+    },
+    {
+      nome: "Lucas Laurindo",
+      telefone: "(32) 98836-9652",
       email: "fulano@gmail.com",
+      id: uuid(),
+    },
+    {
+      nome: "Carol Alves",
+      telefone: "(32) 99743-8751",
+      email: "ciclano@gmail.com",
       id: uuid(),
     },    
   ],

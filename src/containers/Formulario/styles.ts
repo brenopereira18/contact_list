@@ -48,7 +48,7 @@ export const FormGroup = styled.div`
     margin-bottom: 5px;
     color: #717171;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 16px;
   }
 
   input {
@@ -59,6 +59,7 @@ export const FormGroup = styled.div`
     font-family: inherit;
     background-color: transparent;
     border: 1px solid #414141;
+    font-size: 16px;
 
     &::placeholder {
       opacity: 0.5;
